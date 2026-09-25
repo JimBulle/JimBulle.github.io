@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Bert's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'Pixdor';
+      src: url('assets/PixdorTwo.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'Pixdor', sans-serif;
+      background: linear-gradient(to bottom, #b0c4ff, #ffffff);
+      color: #222;
+      cursor: url('image_2025-07-16_201838027-removebg-preview (1).png'), auto;
+      padding: 100px;
+      position: relative;
+    }
+
+    a, button {
+      cursor: url('_B1CE8A89-1D42-45C7-9700-7FECC4AAF480_-removebg-preview (1).png'), pointer;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .music-player {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 250px;
+      background: linear-gradient(to right, #b0c4ff, #ffffff);
+      color: rgb(0, 0, 0);
+      border: 2px solid #888;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: 'Courier New', Courier, monospace;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    .music-player h5 {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .music-player audio {
+      width: 100%;
+    }
+
+    .about-section {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .gallery-section {
+      position: relative;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    audio {
+      margin-top: 1rem;
+    }
+
+
+    .sticker-left {
+      rotate: -10deg;
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+      width: 100px;
+      z-index: 1000;
+      pointer-events: none; /* optional: so it doesn't block clicking */
+    }
+
+    .sticker-left2 {
+      rotate: -20deg;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 140px;
+      z-index: 1000;
+      pointer-events: none; /* optional: so it doesn't block clicking */
+    }
+
+    .sticker-right {
+      rotate: 10deg;
+      position: absolute;
+      top: 120px;
+      right: 0;
+      transform: translateY(-50%);
+      width: 140px;
+      z-index: 1000;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  
+  
+
+  <header>
+    <a href="index.html"><img src="assets/BERT’S PORTFOLIO.png" alt="Bert's Portfolio Logo" style="max-width: 300px;" /></a>
+    <img class="sticker-right" src="assets/os.png" alt="Sticker Right" size="700%">
+    <img class="sticker-left2" src="assets/chil.jpg" alt="Sticker Left">
+    <h1>About Me</h1>
+    <p>Welcome to the place where you can learn stuff about on the internet!</p>
+  </header>
+
+  <!-- Winamp-style music player -->
+  <div class="music-player">
+    <h5>The vibe</h5>
+    <audio controls>
+      <source src="assets/wow.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="container">
+    <!-- Hobbies -->
+    <section>
+      <h2 class="section-title">Hobbies</h2>
+      <p>I love playing video games, meeting new people and new experiences, I also like to do random stuff if im bored enough like sometimes i make weird websites when i'm bored, and I'm a professional walker as in I just like to walk.</p>
+    </section>
+
+    <!-- Interests -->
+    <section>
+      <h2 class="section-title">Interests</h2>
+      <p>My Interests are basically things that just hooks my brain like working out, coding especially my future hopefully being a successful programmer.</p>
+    </section>
+
+    <!-- Future Hopes -->
+    <section>
+      <h2 class="section-title">My Hopes for the Future</h2>
+      <p>I hope to become a creative developer who brings ideas to life online but i still have a long way to go cause all I can do is work and pray cus my dream uni is ITB and the U of I. I want to make things that feel fun, nostalgic, and meaningful — maybe even work with people who inspire me someday and be a humble servant of God.</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Current Projects and Organizations</h2>
+      <p>You can see my repositories through the projects link on the home page which will take you to my GitHub Repos. Currently I am a member of Blueprint Studios as a part of the treasure and sponsor division and right now I'm willing to find more work and maximize my potential.</p>
+    </section>
+
+    <!-- Gallery -->
+    <section>
+      <img class="sticker-left" src="assets/dv.png" alt="Sticker Left">
+      <h2 class="section-title">📸 Photo Gallery</h2>
+      <div class="row gallery">
+        <div class="col-md-4 mb-3">
+          <img src="assets/bow.jpg" alt="Me 1" />
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="assets/original_IMG_0155 (1).jpg" alt="Me 2" />
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="assets/mypfp.jpg" alt="Me 3" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
